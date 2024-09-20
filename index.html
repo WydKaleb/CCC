@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheyenne's Cat Corner!!!</title>
+    <style>
+        body {
+            background-color: #FFC0CB; /* Light pink background */
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: #D80073; /* Darker pink for text */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .meow-btn, .video-btn {
+            background-color: #FF69B4;
+            border: none;
+            color: white;
+            padding: 20px;
+            font-size: 2em;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .meow-btn:hover, .video-btn:hover {
+            background-color: #ff85ca;
+        }
+
+        .image-box {
+            width: 200px;
+            height: 200px;
+            border: 3px solid #D80073;
+            position: fixed;
+        }
+
+        .top-left {
+            top: 10px;
+            left: 10px;
+        }
+
+        .top-right {
+            top: 10px;
+            right: 10px;
+        }
+
+        .bottom-left {
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .bottom-right {
+            bottom: 10px;
+            right: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Flowing cat image row */
+        .cat-flow-container {
+            position: relative;
+            width: 300%;
+            height: 300px; /* Adjust height as needed */
+            overflow: hidden;
+            margin-top: 100px; /* Lower the container to center it vertically */
+        }
+
+        .cat-flow {
+            display: flex;
+            position: absolute;
+            animation: flow 200s linear infinite;
+        }
+
+        .cat-flow img {
+            width: 250px; /* Adjust size of cat images */
+            margin-right: 50px; /* Adjust spacing between images */
+        }
+
+        @keyframes flow {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Duplicate to create seamless flow */
+        .cat-flow::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 200%; /* Double the width for continuous scroll */
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cheyenne's Cat Corner!!!</h1>
+
+    <button class="meow-btn" onclick="playRandomMeow()">Meow!</button>
+    <button class="video-btn" onclick="playRandomAudio()">:)</button>
+
+    <!-- Flowing Cat Images -->
+    <div class="cat-flow-container">
+        <div class="cat-flow">
+            <!-- Cat images -->
+            <img src="CatScroll/cat1.png" alt="Cat 1">
+            <img src="CatScroll/cat2.png" alt="Cat 2">
+            <img src="CatScroll/cat3.png" alt="Cat 3">
+            <img src="CatScroll/cat4.png" alt="Cat 4">
+            <img src="CatScroll/cat5.png" alt="Cat 5">
+            <img src="CatScroll/cat6.png" alt="Cat 6">
+            <img src="CatScroll/cat7.png" alt="Cat 7">
+            <img src="CatScroll/cat8.png" alt="Cat 8">
+            <img src="CatScroll/cat9.png" alt="Cat 9">
+            <img src="CatScroll/bestcat.png" alt="Best Cat">
+            
+            <!-- Duplicate the images for continuous scroll -->
+            <img src="CatScroll/cat1.png" alt="Cat 1">
+            <img src="CatScroll/cat2.png" alt="Cat 2">
+            <img src="CatScroll/cat3.png" alt="Cat 3">
+            <img src="CatScroll/cat4.png" alt="Cat 4">
+            <img src="CatScroll/cat5.png" alt="Cat 5">
+            <img src="CatScroll/cat6.png" alt="Cat 6">
+            <img src="CatScroll/cat7.png" alt="Cat 7">
+            <img src="CatScroll/cat8.png" alt="Cat 8">
+            <img src="CatScroll/cat9.png" alt="Cat 9">
+            <img src="CatScroll/bestcat.png" alt="Best Cat">
+
+            <!-- Duplicate the images for continuous scroll -->
+            <img src="CatScroll/cat1.png" alt="Cat 1">
+            <img src="CatScroll/cat2.png" alt="Cat 2">
+            <img src="CatScroll/cat3.png" alt="Cat 3">
+            <img src="CatScroll/cat4.png" alt="Cat 4">
+            <img src="CatScroll/cat5.png" alt="Cat 5">
+            <img src="CatScroll/cat6.png" alt="Cat 6">
+            <img src="CatScroll/cat7.png" alt="Cat 7">
+            <img src="CatScroll/cat8.png" alt="Cat 8">
+            <img src="CatScroll/cat9.png" alt="Cat 9">
+            <img src="CatScroll/bestcat.png" alt="Best Cat">
+
+            <!-- Duplicate the images for continuous scroll -->
+            <img src="CatScroll/cat1.png" alt="Cat 1">
+            <img src="CatScroll/cat2.png" alt="Cat 2">
+            <img src="CatScroll/cat3.png" alt="Cat 3">
+            <img src="CatScroll/cat4.png" alt="Cat 4">
+            <img src="CatScroll/cat5.png" alt="Cat 5">
+            <img src="CatScroll/cat6.png" alt="Cat 6">
+            <img src="CatScroll/cat7.png" alt="Cat 7">
+            <img src="CatScroll/cat8.png" alt="Cat 8">
+            <img src="CatScroll/cat9.png" alt="Cat 9">
+            <img src="CatScroll/bestcat.png" alt="Best Cat">
+
+            <!-- Duplicate the images for continuous scroll -->
+            <img src="CatScroll/cat1.png" alt="Cat 1">
+            <img src="CatScroll/cat2.png" alt="Cat 2">
+            <img src="CatScroll/cat3.png" alt="Cat 3">
+            <img src="CatScroll/cat4.png" alt="Cat 4">
+            <img src="CatScroll/cat5.png" alt="Cat 5">
+            <img src="CatScroll/cat6.png" alt="Cat 6">
+            <img src="CatScroll/cat7.png" alt="Cat 7">
+            <img src="CatScroll/cat8.png" alt="Cat 8">
+            <img src="CatScroll/cat9.png" alt="Cat 9">
+            <img src="CatScroll/bestcat.png" alt="Best Cat">
+
+            <!-- Duplicate the images for continuous scroll -->
+            <img src="CatScroll/cat1.png" alt="Cat 1">
+            <img src="CatScroll/cat2.png" alt="Cat 2">
+            <img src="CatScroll/cat3.png" alt="Cat 3">
+            <img src="CatScroll/cat4.png" alt="Cat 4">
+            <img src="CatScroll/cat5.png" alt="Cat 5">
+            <img src="CatScroll/cat6.png" alt="Cat 6">
+            <img src="CatScroll/cat7.png" alt="Cat 7">
+            <img src="CatScroll/cat8.png" alt="Cat 8">
+            <img src="CatScroll/cat9.png" alt="Cat 9">
+            <img src="CatScroll/bestcat.png" alt="Best Cat">
+
+            <!-- Duplicate the images for continuous scroll -->
+            <img src="CatScroll/cat1.png" alt="Cat 1">
+            <img src="CatScroll/cat2.png" alt="Cat 2">
+            <img src="CatScroll/cat3.png" alt="Cat 3">
+            <img src="CatScroll/cat4.png" alt="Cat 4">
+            <img src="CatScroll/cat5.png" alt="Cat 5">
+            <img src="CatScroll/cat6.png" alt="Cat 6">
+            <img src="CatScroll/cat7.png" alt="Cat 7">
+            <img src="CatScroll/cat8.png" alt="Cat 8">
+            <img src="CatScroll/cat9.png" alt="Cat 9">
+            <img src="CatScroll/bestcat.png" alt="Best Cat">
+
+            <!-- Duplicate the images for continuous scroll -->
+            <img src="CatScroll/cat1.png" alt="Cat 1">
+            <img src="CatScroll/cat2.png" alt="Cat 2">
+            <img src="CatScroll/cat3.png" alt="Cat 3">
+            <img src="CatScroll/cat4.png" alt="Cat 4">
+            <img src="CatScroll/cat5.png" alt="Cat 5">
+            <img src="CatScroll/cat6.png" alt="Cat 6">
+            <img src="CatScroll/cat7.png" alt="Cat 7">
+            <img src="CatScroll/cat8.png" alt="Cat 8">
+            <img src="CatScroll/cat9.png" alt="Cat 9">
+            <img src="CatScroll/bestcat.png" alt="Best Cat">
+
+            <!-- Duplicate the images for continuous scroll -->
+            <img src="CatScroll/cat1.png" alt="Cat 1">
+            <img src="CatScroll/cat2.png" alt="Cat 2">
+            <img src="CatScroll/cat3.png" alt="Cat 3">
+            <img src="CatScroll/cat4.png" alt="Cat 4">
+            <img src="CatScroll/cat5.png" alt="Cat 5">
+            <img src="CatScroll/cat6.png" alt="Cat 6">
+            <img src="CatScroll/cat7.png" alt="Cat 7">
+            <img src="CatScroll/cat8.png" alt="Cat 8">
+            <img src="CatScroll/cat9.png" alt="Cat 9">
+            <img src="CatScroll/bestcat.png" alt="Best Cat">
+
+            <!-- Duplicate the images for continuous scroll -->
+            <img src="CatScroll/cat1.png" alt="Cat 1">
+            <img src="CatScroll/cat2.png" alt="Cat 2">
+            <img src="CatScroll/cat3.png" alt="Cat 3">
+            <img src="CatScroll/cat4.png" alt="Cat 4">
+            <img src="CatScroll/cat5.png" alt="Cat 5">
+            <img src="CatScroll/cat6.png" alt="Cat 6">
+            <img src="CatScroll/cat7.png" alt="Cat 7">
+            <img src="CatScroll/cat8.png" alt="Cat 8">
+            <img src="CatScroll/cat9.png" alt="Cat 9">
+            <img src="CatScroll/bestcat.png" alt="Best Cat">
+
+            <!-- Duplicate the images for continuous scroll -->
+            <img src="CatScroll/cat1.png" alt="Cat 1">
+            <img src="CatScroll/cat2.png" alt="Cat 2">
+            <img src="CatScroll/cat3.png" alt="Cat 3">
+            <img src="CatScroll/cat4.png" alt="Cat 4">
+            <img src="CatScroll/cat5.png" alt="Cat 5">
+            <img src="CatScroll/cat6.png" alt="Cat 6">
+            <img src="CatScroll/cat7.png" alt="Cat 7">
+            <img src="CatScroll/cat8.png" alt="Cat 8">
+            <img src="CatScroll/cat9.png" alt="Cat 9">
+            <img src="CatScroll/bestcat.png" alt="Best Cat">
+        </div>
+    </div>
+
+    <div class="image-box top-left">
+        <img src="CatCorners/corner1.jpg" alt="Image 1">
+    </div>
+    <div class="image-box top-right">
+        <img src="CatCorners/corner2.jpg" alt="Image 2">
+    </div>
+    <div class="image-box bottom-left">
+        <img src="CatCorners/corner3.jpg" alt="Image 3">
+    </div>
+    <div class="image-box bottom-right">
+        <img src="CatCorners/corner4.jpg" alt="Image 4">
+    </div>
+
+    <script>
+        // Array of cat sounds
+        const catSounds = ['CatSounds/cat1.mp3', 
+        'CatSounds/cat2.mp3',
+        'CatSounds/cat3.mp3',
+        'CatSounds/cat4.mp3',
+        'CatSounds/cat5.mp3',
+        'CatSounds/cat6.mp3',
+        'CatSounds/cat7.mp3',
+        'CatSounds/cat8.mp3',
+        'CatSounds/cat9.mp3',
+        'CatSounds/cat10.mp3',
+        'CatSounds/cat11.mp3'];
+
+        // Play a random cat sound
+        function playRandomMeow() {
+            const sound = catSounds[Math.floor(Math.random() * catSounds.length)];
+            new Audio(sound).play();
+        }
+
+        // Array of voice line files for the ":)" button
+        const voiceLines = ['VoiceLines/ily.mp3',
+         'VoiceLines/ily2.mp3',
+         'VoiceLines/ily3.mp3',
+         'VoiceLines/ily4.mp3',
+         'VoiceLines/ily5.mp3',
+         'VoiceLines/ily6.mp3',
+         'VoiceLines/ily7.mp3',
+         'VoiceLines/ily8.mp3',];
+
+        // Play a random MP3 sound for the ":)" button
+        function playRandomAudio() {
+            const sound = voiceLines[Math.floor(Math.random() * voiceLines.length)];
+            new Audio(sound).play();
+        }
+    </script>
+
+</body>
+</html>
